@@ -1,0 +1,8 @@
+CREATE TABLE user_refers (
+    User_ID VARCHAR(10) PRIMARY KEY,
+    Username VARCHAR(100) NOT NULL,
+    Refercode VARCHAR(20) UNIQUE NOT NULL,
+    TimesUsed INT DEFAULT 0,
+    LastUsed DATETIME NULL,
+    CreatedOn DATETIME DEFAULT CURRENT_TIMESTAMP
+);
